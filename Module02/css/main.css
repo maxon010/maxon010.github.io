@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0; 
+    background-color: #e6e9e9;
+}
+.page {
+    /*margin: 4px, 464px, 52px, 464px - замеры на макете, разрешение 1440x806*/
+    margin-top: 4px; /*4px*/
+    margin-bottom: 52px; /*52px*/
+    margin-left: 464px; /*464px*/
+    margin-right: 464px; /*464px*/
+    padding-right: 50px; 
+    padding-left: 50px; 
+    width: 35%; /* 512px */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+#personal_name{
+    
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+#img1 {
+    text-align: center;
+}
+.personal_data{
+    padding-top: 48px; 
+    border-bottom: 1px solid black;
+    align-content: center;
+}
+
+.persona_wish{
+    border-bottom: 1px solid black;
+}
+.contacts{
+    border-bottom: 1px solid black;
+}
+.feedback{
+    padding-bottom: 48px;
+}
+
+a {
+    color: #0083e8;
+}

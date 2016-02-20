@@ -1,0 +1,126 @@
+body{
+    background-color: #f9f9f9;
+}
+.page {
+    margin-left: 154px;
+    width: 1058px; /*77.45%*/
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans', sans-serif;
+}
+.Logo_img{
+    margin-left: 46px;
+    width: 145px;
+    }
+
+.MainMenu-wrapp{
+    margin-top: 40px;
+    margin-left: 46px;
+    margin-right: 46px;
+    height: 40px;
+    background: linear-gradient(to top, #454444, #5e5e5e);
+}
+.MainMenu {
+    list-style: none; /* Отключение отображения маркеров. */
+}
+.MainMenu li {
+    float: left; /* Выстраивание элементов списка в один ряд. */
+    font-size: 14px; /* Размер текста в ссылках. */
+    height: 40px;
+    background: linear-gradient(to top, #454444, #5e5e5e); 
+}
+.MainMenu li a{
+    display: inline-block; /* Изменение отображения на блочное */
+   /* Внутри блочные отступы. */
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 12px;
+    color: #ffffff; /* Цвет текста в блоках меню. */
+    text-decoration: none; /* Устранение подчёркивания ссылок. */
+}
+.MainMenu li:hover{
+    background: #353535;
+    height: 40px;
+}
+
+.SideBar {
+    margin-top: 36px;
+    margin-left: 46px;
+    width: 240px;
+    list-style: none; /* Отключение отображения маркеров. */
+}
+.SideBar li {
+    font-size: 14px; /* Размер текста в ссылках. */
+    border: 1px solid #c8c8c8;    
+    height: 40px;
+}
+.SideBar li a{
+   display: inline-block; /* Изменение отображения на блочное*/
+   padding: 12px 36px; 12px; 36px /* Внутри блочные отступы. */
+   background: #ffffff; /* Цвет блоков меню. */
+   color: #656363; /* Цвет текста в блоках меню. */
+   text-decoration: none; /* Устранение подчёркивания ссылок. */
+}
+.SideBar li:hover{
+   padding-left: 12px;
+   background: #f9f9f9;
+   color: #2c2c2c;
+}
+
+.Content {
+    margin-top: -210px; 
+    margin-left: 334px; /*325px;*/
+    width: 670px;
+}
+.Content img{
+    padding-top: 48px;
+    padding-right: 88px;
+    padding-left: 88px;
+    padding-bottom: 48px;
+    border: 1px solid #c8c8c8;
+}
+.ContentText{
+    /*margin-top: 85x;*/
+    padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 13px;
+    line-height: 21px;
+}
+.Footer {
+   list-style: none; /* Отключение отображения маркеров. */
+}
+.Footer-wrapp{
+    margin-top: 40px;
+    margin-left: 46px;
+    margin-right: 46px;
+    height: 40px;
+    background: #e1e1e1;
+}
+.Footer li {
+   float: left; /* Выстраивание элементов списка в один ряд. */
+   font-size: 13px; /* Размер текста в ссылках. */
+   height: 40px;
+   background: #e1e1e1;
+}
+.Footer li a{
+   display: block; /* Изменение отображения на блочное */
+   padding-right: 24px;
+   padding-left: 24px;
+   padding-top: 12px;
+   color: #2c2c2c; /* Цвет текста в блоках меню. */
+   text-decoration: none; /* Устранение подчёркивания ссылок. */
+}
+.Footer li:hover{
+   height: 40px;     
+   text-decoration: underline;
+}
+.CopyRights{
+   float: right;
+   padding-top: 12px;
+   padding-right: 24px;
+   font-size: 13px; 
+   height: 40px;
+}
