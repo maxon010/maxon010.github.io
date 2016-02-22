@@ -49,16 +49,19 @@ body{
     margin-top: 36px;
     margin-left: 46px;
     width: 240px;
+    border-bottom: 1px solid #c8c8c8;    
     list-style: none; /* Отключение отображения маркеров. */
 }
 .SideBar li {
     font-size: 14px; /* Размер текста в ссылках. */
-    border: 1px solid #c8c8c8;    
+    border-top: 1px solid #c8c8c8;    
+    border-left: 1px solid #c8c8c8;  
+    border-right: 1px solid #c8c8c8;    
     height: 40px;
 }
 .SideBar li a{
    display: inline-block; /* Изменение отображения на блочное*/
-   padding: 12px 36px; 12px; 36px /* Внутри блочные отступы. */
+   padding: 12px 36px 12px 36px; /* Внутри блочные отступы. */
    background: #ffffff; /* Цвет блоков меню. */
    color: #656363; /* Цвет текста в блоках меню. */
    text-decoration: none; /* Устранение подчёркивания ссылок. */
