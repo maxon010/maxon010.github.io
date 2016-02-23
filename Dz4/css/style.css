@@ -97,8 +97,7 @@ ul.menu > li {
 }
 ul.menu > li > a {
     display: block;
-    /*padding-top: 5px;*/
-line-height: 28px;
+    line-height: 28px;
     padding-left: 34px;
     padding-right: 34px;
     color: white;
