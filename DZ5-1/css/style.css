@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: auto; 
+    font-family: 'Helvetica Neue';
+}
+.Header{
+    height: 36px;
+    width: 1366px;
+    background-color: #075291;
+}
+
+/* Главное Меню */
+
+.clearfix:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+.MainMenu-wrapp{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 36px;
+    width: 843px;
+    background-color: #075291;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    height: 36px;
+    width: 843px;
+}
+    
+ul.menu > li {
+    float: right;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    line-height: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #60b5ed;
+    background-color: #075291;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: #4eabda;
+    color: #fff;
+}
+.line{
+    float:left;
+    line-height: 36px;
+    padding-left: 10px;
+    margin-top: 3px;
+    padding-top:30px;
+    border-right:  1px solid #56a2dc;
+}
+.Border-wrapp{
+    display: block;
+    float:left;
+    line-height: 36px;
+    width: 220px;
+    background-color: #075291;
+    font-size: 14px;
+    text-align: center;
+}
+.Border-wrapp a{
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.flag{
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 40px;
+}
+.Border-wrapp:hover{
+    background: linear-gradient(to top, #2e7ac4, #4eacda); 
+}
+.header-links{
+    float:left;
+    line-height: 36px;
+    width: 190px; 
+    font-size: 14px;
+    text-align: center;
+}
+.header-links a{
+    color: #feffff;
+    text-decoration: none;
+}
+.header-links:hover{
+    background: linear-gradient(to top, #2e7ac4, #4eacda);
+}
+.text-underline{
+    text-decoration: underline;
+}
+.Main-block{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin-top: -274px; /*половина высоты Main-block (310) минус высота верхнего меню(36)*/
+    margin-left: -280px;
+    height: 610px;
+    width: 560px;
+    text-align: center;
+    font-family: 'Helvetica Neue';
+}
+.Head-block{
+    display: inline-block;
+    height: 62px;
+    width: 560px;
+    background: rgba(0,0,0,0.5);
+    font-size: 24px;
+    color: #fff;
+    line-height: 62px;
+}
+.Central-block{
+    margin: auto;
+    margin-top: 2px;
+    width: 560px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    font-family: 'Helvetica Neue';
+}
+.Facebook-login{
+    padding-top: 36px;
+}
+
+.OU{
+    line-height:62px;
+    color:#999999;
+    font-size: 14px;
+}
+hr{
+    display: inline-block;
+    line-height: 62px;
+    padding-left: 0px;
+    width:123px;
+    color:  #666666;
+    border-bottom: 1px solid #000;
+}
+
+.account-field{
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #484948;
+    background: #111010;
+    outline: none;
+    height: 35px;
+    width: 276px;
+    color: #cccccc;
+    font-size: 14px;
+    font-family: 'Helvetica Neue';
+}
+.check{
+    margin: 0 auto;
+    height: 35px;
+    width: 276px;
+   text-align: left; 
+}
+
+input[type="checkbox"]{
+    text-align: left;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 14px;
+    color: #cccccc;
+}
+
+input[type="submit"]{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #fffbfb;
+    background: linear-gradient(to top,#1e4b76, #2e7ac4);
+    height:35px;
+    width: 150px;
+    border: none;
+}
+form .account-field:focus{
+    /*background: linear-gradient(to top, #2e7ac4, #67c6e6);*/
+    outline: none;
+    background: #1b5288;
+    /*border: 2px solid rgba(255,255,255,0.5);*/
+    color: #fffbfb;
+    box-shadow: 0 0 10px rgba(255,255,255, 1);
+}
+.Text-agree{
+    display: block;
+    font-size: 11px;
+    color: #cccccc;
+    padding-bottom: 15px;
+}
