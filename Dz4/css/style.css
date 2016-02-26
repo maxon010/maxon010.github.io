@@ -98,8 +98,8 @@ ul.menu > li {
 ul.menu > li > a {
     display: block;
     line-height: 28px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 33px;
+    padding-right: 33px;
     color: white;
     background-color: #313131;
     text-decoration: none;
