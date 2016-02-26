@@ -30,6 +30,9 @@ body{
     font-size: 14px; /* Размер текста в ссылках. */
     height: 40px;
     background: linear-gradient(to top, #454444, #5e5e5e); 
+    border-left: 1px solid rgba(0,0,0,0);
+    border-right: 1px solid rgba(0,0,0,0);
+    
 }
 .MainMenu li a{
     display: inline-block; /* Изменение отображения на блочное */
@@ -43,8 +46,8 @@ body{
 .MainMenu li:hover{
     background: #353535;
     height: 40px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
 }
 
 .SideBar {
@@ -72,25 +75,29 @@ body{
    display: block;
    padding-left: 12px;
    background: #f9f9f9;
-   color: #2c2c2c;
 }
 .SideBar li a:hover{
    background: #f9f9f9;
+   color: #2c2c2c;
    }
 .Content {
     margin-top: -247px; 
     margin-left: 334px; /*325px;*/
     width: 670px;
+    height: 600px;
+    /*text-align: center;*/
 }
-.Content img{
-    padding-top: 48px;
-    padding-right: 88px;
-    padding-left: 88px;
-    padding-bottom: 48px;
+#image-block{
+    width: 670px;
+    height: 400px;    
     border: 1px solid #c8c8c8;
 }
+.Content img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 48px;
+}
 .ContentText{
-    /*margin-top: 85x;*/
     padding-top: 40px;
     padding-left: 24px;
     padding-right: 24px;
