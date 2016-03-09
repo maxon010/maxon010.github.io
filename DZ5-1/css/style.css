@@ -12,13 +12,20 @@
 body{
     margin: 0;
     padding: 0;
-    background: url("../img/bg.jpg") no-repeat;
-    background-size: auto; 
     font-family: 'Helvetica Neue';
+    background-color: #98bed1;
+    
+}
+.Wrapper{
+    width: 1215px;
+    height: 1028px;
+    margin: 0 auto;
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: auto;
+    
 }
 .Header{
     height: 36px;
-    width: 1366px;
     background-color: #075291;
 }
 
@@ -78,7 +85,7 @@ ul.menu > li > a:hover {
     display: block;
     float:left;
     line-height: 36px;
-    width: 220px;
+    width: 170px;
     background-color: #075291;
     font-size: 14px;
     text-align: center;
@@ -91,7 +98,7 @@ ul.menu > li > a:hover {
 .flag{
     position: absolute;
     padding-top: 5px;
-    padding-left: 40px;
+    padding-left: 10px;
 }
 .Border-wrapp:hover{
     background: linear-gradient(to top, #2e7ac4, #4eacda); 
@@ -114,11 +121,6 @@ ul.menu > li > a:hover {
     text-decoration: underline;
 }
 .Main-block{
-    /*position: fixed;
-    top:50%;
-    left: 50%;
-    margin-top: -274px; /*половина высоты Main-block (310) минус высота верхнего меню(36)
-    margin-left: -280px;*/
     margin: auto;
     margin-top: 20px;
     height: 610px;
@@ -198,6 +200,7 @@ input[type="submit"]{
     height:35px;
     width: 150px;
     border: none;
+    cursor: pointer;
 }
 form .account-field:focus{
     /*background: linear-gradient(to top, #2e7ac4, #67c6e6);*/
