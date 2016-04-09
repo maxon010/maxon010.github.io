@@ -47,6 +47,7 @@ body{
         float: right;
         margin-top: 76px;
     }
+   
     .Company{
         margin-top: 70px; 
         float: left;
@@ -94,32 +95,15 @@ body{
            text-align: center;
     }
 }
-.Company-first{
-    /* Text style for "PINGBULL" */
-    display: inline-block;
-    width: 120px;
-    height: 36px;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-    color: white;
-    font-family: LeagueGothic;
-    font-size: 48px;
-    font-weight: 400;
-}
-.Company-last{
-    /* Text style for "ER" */
-    display: inline-block;
-    width: 29px;
-    height: 36px;
-    /*color: linear-gradient(to top, #33263a, #745083);*/
-    color: #745083;    
-    font-family: LeagueGothic;
-    font-size: 48px;
-    font-weight: 400;
-}
 @media only screen and (min-width: 480px) and (max-width: 767px){
-    .Menu--480{
-        /* Style for "Shape 8" */
+    
+    .Menu--320{
         display: block;
+        height: 40px;
+        overflow: hidden;
+        
+    }
+    .Menu--320:hover {
         margin: 0 auto;
         width: 246px;
         height: 259px;
@@ -133,54 +117,52 @@ body{
         left: 50%;
         transform:translateX(-50%);
         z-index: 100;
-    }
-    .Menu-item{
-        display: none;
-    }
+        }
+    
 }
 @media only screen and (min-width: 768px){
+    
     .Menu li{
         float: left;
         position: relative;
+        display: block;
     }
-    .Menu-item{
-        display: none;
-    }
+ 
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
-    .Menu--480 li:first-child{
+    .Menu--320 li:first-child{
         padding-top: 6px;
     }
-    .Menu--480 li{
+    .Menu--320 li{
         position: relative;
         box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);
     }
-    .Menu-item{
-        display: none;
-    }
+ 
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
     .Menu{
         display: none;
     }
-    .Menu--480{
-        display: none;
-    }
-    .Menu-item{
+    .Menu--320{
         /* Text style for "Home" */
+        display: block;
         margin: 0 auto;
         margin-top: 39px;
-        width: 35px;
+        width: 150px;
         font-family: LeagueGothic;
         font-size: 24px;
         font-weight: 400;
         text-transform: uppercase;
+        height: 25px;
+        overflow: hidden;
+        text-align: center;
     }
-    .Menu-item a{
+    .Menu--320 a{
         color: white;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-        text-decoration: none;        
+        text-decoration: none; 
+    
     }
+     
 }
     
     
@@ -190,7 +172,7 @@ body{
     text-decoration: none;
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
-    .Menu--480 li a{
+    .Menu--320 li a{
         text-align: center;
         line-height: 42px;
     }
@@ -211,14 +193,20 @@ body{
     text-decoration: underline;
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
-    .Menu--480 a:hover {
+    .Menu--320 a:hover {
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
-    .Menu-item a:hover {
+    .Menu--320 a:hover {
         text-decoration: underline;
+        
     }
+    .Menu--320:hover {
+        height: 200px;
+        overflow: auto;
+    }
+      
 }
 .text-box{
     float: left;
@@ -232,8 +220,7 @@ body{
     .text-box{
         width: 274px;
         margin-left: 23px;
-        
-    }
+     }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
     .text-box{
@@ -428,41 +415,63 @@ body{
 }
 .navigation{
     clear: both;
+    width: 90px;
 }
+.navigation-check {
+    float: left;
+    background-image: url(../img/sprite-nav.png);
+    height: 17px;
+    width: 16px;
+    display: block;
+    cursor: pointer;
+    margin-left: 5px;
+}
+ .navigation-check:active{
+    background-image: url(../img/sprite-nav.png);
+    background-position: 0 18px;
+    width: 16px;
+    height: 17px;
+  }
 @media only screen and (min-width: 960px){
     .navigation{
-        height: 168px;
-    }
-    .navigation img{
+        display: block;
+        height: 77px; 
+        /*position: absolute;*/
         padding-left: 710px;
         padding-top: 92px;
+        /*right: 170px;
+        bottom: -238px;*/
     }
+    /*.navigation img{
+    }*/
+    
 }
 @media only screen and (min-width: 768px) and (max-width: 959px){
     .navigation{
-        height: 154px;
-        overflow: hidden;
-    }
-    .navigation img{
+        display: block;
+        height: 116px;
         padding-top: 37px;
         padding-left: 523px;
+        overflow: hidden;
     }
+    /*.navigation img{
+    }*/
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
     .navigation{
-        /*height: 96px;*/
+        height: 96px;
+        margin: -25px auto;
         overflow: hidden;
-        text-align: center;
+        
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
     .navigation{
-        height: 156px;
+        height: 96px;
+        margin: 0 auto;
+        padding-top: 60px;
         overflow: hidden;
-        text-align: center;
-    }
-    .navigation img{
-        padding-top: 80px;
+        
     }
 }
 .content-gradient{
@@ -654,7 +663,7 @@ main{
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
     main{
-        margin-top: 25px;
+        /*margin-top: 25px;*/
         height: 598px;
     }
 }    
@@ -1073,34 +1082,48 @@ main{
         text-decoration: none;
     }
 }
-.nav{
+.navigation-copy-check{
+  float: left;
+  background-image: url(../img/sprite-navcopy.png);
+  height: 20px;
+  width: 20px;
+  display: block;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.navigation-copy-check:active{
+  background-image: url(../img/sprite-navcopy.png);
+  background-position: 0 20px;
+  width: 20px;
+  height: 20px;
+}
+.navigation-copy{
     clear: both;
     position: absolute;
     top: 395px;
     /*margin-left: 195px;*/
 }
 @media only screen and (min-width: 960px){
-    .nav{
+    .navigation-copy{
         left: 195px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px){
-    .nav{
+    .navigation-copy{
         left: 137px;
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
-    .nav{
+    .navigation-copy{
         position: absolute;
         top: 367px;
-        width: 100%;
-        text-align: center;
+        left: 180px;
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
-    .nav{
+    .navigation-copy{
         top: 367px;
-        left: 120px;
+        left: 100px;
     }
 }
 @media only screen and (min-width: 768px){
