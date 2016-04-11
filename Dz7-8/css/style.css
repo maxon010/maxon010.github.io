@@ -95,7 +95,7 @@ body{
            text-align: center;
     }
 }
-@media only screen and (min-width: 480px) and (max-width: 767px){
+@media only screen and (min-width: 320px) and (max-width: 767px){
     
     .Menu--320{
         display: block;
@@ -129,7 +129,7 @@ body{
     }
  
 }
-@media only screen and (min-width: 480px) and (max-width: 767px){
+@media only screen and (min-width: 320px) and (max-width: 767px){
     .Menu--320 li:first-child{
         padding-top: 6px;
     }
@@ -139,39 +139,13 @@ body{
     }
  
 }
-@media only screen and (min-width: 320px) and (max-width: 479px){
-    .Menu{
-        display: none;
-    }
-    .Menu--320{
-        /* Text style for "Home" */
-        display: block;
-        margin: 0 auto;
-        margin-top: 39px;
-        width: 150px;
-        font-family: LeagueGothic;
-        font-size: 24px;
-        font-weight: 400;
-        text-transform: uppercase;
-        height: 25px;
-        overflow: hidden;
-        text-align: center;
-    }
-    .Menu--320 a{
-        color: white;
-        text-decoration: none; 
-    
-    }
-     
-}
-    
-    
+
 .Menu li a{
     display: block;
     color: white;
     text-decoration: none;
 }
-@media only screen and (min-width: 480px) and (max-width: 767px){
+@media only screen and (min-width: 320px) and (max-width: 767px){
     .Menu--320 li a{
         text-align: center;
         line-height: 42px;
@@ -192,22 +166,12 @@ body{
 .Menu a:hover {
     text-decoration: underline;
 }
-@media only screen and (min-width: 480px) and (max-width: 767px){
+@media only screen and (min-width: 320px) and (max-width: 767px){
     .Menu--320 a:hover {
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
     }
 }
-@media only screen and (min-width: 320px) and (max-width: 479px){
-    .Menu--320 a:hover {
-        text-decoration: underline;
-        
-    }
-    .Menu--320:hover {
-        height: 200px;
-        overflow: auto;
-    }
-      
-}
+
 .text-box{
     float: left;
 }
@@ -265,17 +229,6 @@ body{
          display: none;
     }
 }
-/*Стрелки
-.slider-left{
-    float: left;
-    height: 400px;
-    line-height: 400px;
-}
-.slider-right{
-    float: right;
-    height: 400px;
-    line-height: 400px;
-}*/
 .Iphone4{
     float: right;
     margin-top: -18px;
@@ -436,14 +389,10 @@ body{
     .navigation{
         display: block;
         height: 77px; 
-        /*position: absolute;*/
         padding-left: 710px;
         padding-top: 92px;
-        /*right: 170px;
-        bottom: -238px;*/
+
     }
-    /*.navigation img{
-    }*/
     
 }
 @media only screen and (min-width: 768px) and (max-width: 959px){
@@ -454,16 +403,13 @@ body{
         padding-left: 523px;
         overflow: hidden;
     }
-    /*.navigation img{
-    }*/
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
     .navigation{
         height: 96px;
         margin: -25px auto;
         overflow: hidden;
-        
-    }
+     }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
     .navigation{
@@ -471,7 +417,6 @@ body{
         margin: 0 auto;
         padding-top: 60px;
         overflow: hidden;
-        
     }
 }
 .content-gradient{
