@@ -1,0 +1,49 @@
+body {
+    font-family: Tahoma;
+    background: white;
+}
+.FormWrapper {
+    width: 80%;
+    height: 200px;
+	margin: 30px auto;
+	background: white;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+}
+.ButtonWrapper{
+    width: 80%;
+    margin: 20px auto 0;
+}
+label{
+    display: inline-block;
+    width: 100px;
+}
+.records{
+    display: inline-block;
+    margin-top: 25px;
+    height: 25px;
+    width: 600px;
+    line-height: 25px;
+}
+.tipstext{
+    display: none;
+    width: 200px;
+    font-size: 12px;
+    padding-left: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(210, 210, 210, 0.75);
+    color: grey;
+    border-radius: 5px;
+    line-height: 25px;
+}
+input[type="submit"]{
+    border-radius: 5px;
+    height: 30px;
+    background: #E1E1D8;
+    border: solid 1px #73C8F0; 
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: #aaa;
+    box-shadow: 0px 0px 10px 2px rgba(210, 210, 210, 0.75);
+}

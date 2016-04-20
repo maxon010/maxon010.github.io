@@ -1,0 +1,73 @@
+body {
+    font-family: Tahoma;
+    background: white;
+}
+.MainWrapper {
+    display: block;
+    width:80%;
+	margin: 30px auto;
+	background: white;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Menu{
+}
+.Menu li {
+    display: block;
+    margin-left: 5px;
+    float: left;
+    width: 150px;
+    height: 40px;
+    background: #ddc;
+    border: 1px solid grey;
+    /*border-bottom: none;*/
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    line-height: 40px;
+}
+.MenuWrapper{
+    padding-top: 10px;
+    overflow: hidden;
+    width: 100%;
+    background: grey;
+    border-radius: 5px;
+    
+}
+.Menu li a{
+    text-decoration: none;
+    text-align: center;
+    color: darkcyan;
+}
+.TextWrapper{
+    clear: both;
+    padding: 30px;
+}
+#ActiveTab{
+    display: block;
+    background: white;
+    border-bottom: 1px solid white;
+}
+.Tabs{
+   background: #ddc; 
+}
+.Tabs:hover{
+    background: #4FE163;
+}
+#ActiveTab a{
+    color: black;
+}
+.TabsText{
+    display: none;
+}
+#ActiveText{
+    display: block;
+}
+/*#tabs-2{
+    display: none;
+}
+#tabs-3{
+    display: none;
+}*/
+
