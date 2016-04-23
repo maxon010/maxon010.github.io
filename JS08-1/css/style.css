@@ -2,7 +2,7 @@ body {
     font-family: Tahoma;
     background: white;
 }
-.MainWrapper {
+.main-wrapper{
     display: block;
     width:80%;
 	margin: 30px auto;
@@ -12,22 +12,18 @@ body {
     border-radius: 10px;
 }
 
-.Menu{
-}
-.Menu li {
+.menu li {
     display: block;
     margin-left: 5px;
     float: left;
     width: 150px;
     height: 40px;
-    background: #ddc;
     border: 1px solid grey;
-    /*border-bottom: none;*/
     border-radius: 5px 5px 0 0;
     text-align: center;
     line-height: 40px;
 }
-.MenuWrapper{
+.menu-wrapper{
     padding-top: 10px;
     overflow: hidden;
     width: 100%;
@@ -35,39 +31,33 @@ body {
     border-radius: 5px;
     
 }
-.Menu li a{
+.menu li a{
     text-decoration: none;
     text-align: center;
     color: darkcyan;
 }
-.TextWrapper{
+.text-wrapper{
     clear: both;
     padding: 30px;
 }
-#ActiveTab{
+#active-tab{
     display: block;
     background: white;
     border-bottom: 1px solid white;
 }
-.Tabs{
+.tabs{
    background: #ddc; 
 }
-.Tabs:hover{
+.tabs-hover{
     background: #4FE163;
 }
-#ActiveTab a{
+#active-tab a{
     color: black;
 }
-.TabsText{
+.tabs-text{
     display: none;
 }
-#ActiveText{
+#active-text{
     display: block;
 }
-/*#tabs-2{
-    display: none;
-}
-#tabs-3{
-    display: none;
-}*/
 

@@ -2,7 +2,7 @@ body {
     font-family: Tahoma;
     background: white;
 }
-.FormWrapper {
+.form-wrapper {
     width: 80%;
     height: 200px;
 	margin: 30px auto;
@@ -11,7 +11,7 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
-.ButtonWrapper{
+.button-wrapper{
     width: 80%;
     margin: 20px auto 0;
 }

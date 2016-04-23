@@ -1,27 +1,22 @@
 $(function (){
     
-    var $tabs = $('.Tabs');
-    var $tabsContent = $('.TabsText');
+    var $tabs = $('.tabs');
+    var $tabsContent = $('.tabs-text');
     
-    $tabs.on('click', function(e){
+   $tabs.on('click', function(e){
         var index = $(this).index();
         //e.preventDefault();
         $tabs.removeAttr('id');
         $tabsContent.removeAttr('id');
-        $tabs.eq(index).attr('id', 'ActiveTab');
-        $tabsContent.eq(index).attr('id', 'ActiveText');
-         
+        $tabs.eq(index).attr('id', 'active-tab');
+        $tabsContent.eq(index).attr('id', 'active-text');
     });
-   /*$tabs.hover(
+    
+   $tabs.hover(
         function(){
-            $(this).css('background', '#4FE163')
+            $(this).toggleClass('tabs-hover', true);
         },
         function(){
-            if ($(this).attr('id') === 'ActiveTab') {
-                $(this).css('background', 'white');
-            } else {
-                $(this).css('background', '#ddc');
-                
-            }
-        });*/
+            $(this).toggleClass('tabs-hover', false);
+        });
 }); 
