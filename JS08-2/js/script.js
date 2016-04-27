@@ -3,12 +3,12 @@ $(function() {
     var $tipsCollection;
     
     $('.textfield').each(function(index) {
-        $(this).hover(function() {
-            $tips = $('#tips'+ (index+1));
-            $tips.fadeIn(1000);
+        $(this).mouseover(function() {
+            $tips = $(this).siblings('.tipstext');
+            $tips.fadeIn(500);
             $tips.css('display','inline-block');
-        },
-        function(){
+        });
+         $(this).mouseout(function() {
             $tips.fadeOut(200);
         });
     });
