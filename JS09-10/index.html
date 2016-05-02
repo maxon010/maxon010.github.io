@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.mfs.css">
+ 
+  <title>JS09-10</title>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.color.js"></script>
+
+  <!-- Карусель -->
+   <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+
+  <!-- Кастомный селектор -->
+<script type="text/javascript" src="js/jquery.mfs.min.js"></script> 
+  <!-- jQuery checkbox -->
+<script type="text/javascript" src="js/jquery.checkbox.js"></script> 
+ 
+<script type="text/javascript" src="js/script.js"></script>
+   
+</head>
+<body>
+  
+    <nav>
+	<ul>
+		<li class="dropdown"><a href="#">Рубрики&nbsp;</a>
+             <ul class="submenu">
+             	<li><a href="#">Город</a></li>
+             	<li class="dropdown"><a href="#">Пейзажи</a>
+                    <ul class="submenu">
+                    	<li><a href="#">Небо</a></li>
+                    	<li><a href="#">Море</a></li>
+                    	<li class="dropdown"><a href="#">Горы</a>
+                            <ul class="submenu">
+                            	<li><a href="#">Алтай</a></li>
+                            	<li><a href="#">Гималаи</a></li>
+                            	<li><a href="#">Кавказ</a></li>
+                            </ul>
+                    	</li>
+                    	<li><a href="#">Лес</a></li>
+                    </ul>
+             	</li>
+             	<li><a href="#">Репортаж</a></li>
+             	<li><a href="#">Спорт</a></li>
+             </ul>
+		</li>
+		<li><a href="#">Конкурсы</a></li>
+		<li><a href="#">События</a></li>
+		<li><a href="#">Объявления</a></li>
+		<li><a href="#">Рейтинги</a></li>
+	</ul>
+</nav>
+<div class="slider-box">
+     <div class="jcarousel">
+        <ul>
+            <li>
+                <img class="image image1" src="img/slider1.jpg" alt="Image">
+           </li>
+            <li>
+                <img class="image image2" src="img/slider2.jpg" alt="Image">
+            </li>
+             <li>
+                <img class="image image3" src="img/slider3.jpg" alt="Image">
+            </li>
+        </ul>
+    </div>
+    <a class="jcarousel-prev" href="#"></a>
+    <div class="jcarousel-pagination"></div>
+    <a class="jcarousel-next" href="#"></a>
+ </div>
+<form action="#" class="custom-select">
+       
+          <label for="os0">Сортировка по:</label>
+          <select name="os0" id="os0">
+            <option value="рейтингу">рейтингу</option>
+
+            <option value="алфавиту">алфавиту</option>
+            <option value="автору">автору</option>
+            <option value="цене">цене</option>
+           
+          </select>
+          
+          <div class="css-checkbox">
+            <p>CSS-checkbox:</p>
+             <input type="checkbox" id="test-check1">
+             <label for="test-check1">Автор</label>
+             <br>
+              <input type="checkbox" id="test-check2">
+             <label for="test-check2">Размер</label>
+             <br>
+             <input type="checkbox" id="test-check3">
+             <label for="test-check3">Цена</label>
+        </div>
+        <div class=jquery-checkbox>
+            <p>jQuery-checkbox:</p>
+            <label for="ch1">Автор</label>
+            <span class="niceCheck">
+                <input type="checkbox" name="ch1">
+            </span>
+            <br>
+            <label for="ch2">Размер</label>
+            <span class="niceCheck">
+                <input type="checkbox" name="ch2">
+            </span>
+            <br>
+            <label for="ch3">Цена</label>
+            <span class="niceCheck">
+                <input type="checkbox" name="ch3">
+            </span>
+        </div>
+    
+    </form>  
+    
+</body>
+</html>

@@ -1,0 +1,223 @@
+body {
+    font-family: Tahoma;
+    background: #cec;
+}
+.slider-box{
+    float: right;
+    margin: 70px 100px auto;
+    border: 10px solid white;
+    border-radius: 10px;
+    height: 480px;
+    width: 800px;
+    position: relative;
+    
+}
+.jcarousel {
+    width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    width: 800px;
+}
+.jcarousel-prev{
+	background: url(../img/left.png) 0 0 no-repeat;
+    width: 30px;
+    height: 42px;
+    /*display: inline-block; 
+    float: left;*/
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    z-index: 100;
+}
+.jcarousel-next{
+	background: url(../img/right.png) 0 0 no-repeat;
+	/*background-size: 35px;*/
+    width: 30px;
+    height: 42px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    z-index: 100;
+    
+}
+.jcarousel-pagination {
+	position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+    margin-right: 5px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.submenu{
+    background-color:#28A2AF;
+}
+nav {
+    background-color: #42BCE1;
+    margin: 0 auto;
+    
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display: inline-block;
+    position:relative;
+}
+nav li ul {    
+    background-color:#28A2AF;
+    position:absolute;
+    left:0px;
+    width:150px;
+}
+
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    background-color:#28A2AF;
+    left: 150px; 
+    margin:0;
+}
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(50,50,50);
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px white;
+    margin: 0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.gif');
+    background-size: 12px; 
+    background-position: right 0px top 20px; 
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.gif');
+    background-size: 6px; 
+    background-position: right 14px;
+    background-repeat:no-repeat;
+}
+ul .submenu {
+    display:none;
+}
+.custom-select{
+    margin-top: 250px;
+    margin-left: 20px;
+    /*width: 200px;*/
+}
+label{
+    color: steelblue;
+    font-size: 14px;
+}
+
+.css-checkbox input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.css-checkbox label {
+	cursor: pointer;
+}
+.css-checkbox label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox-2.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+.css-checkbox input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+.css-checkbox label:hover:after {
+    background-position: 0 -34px;
+}
+.css-checkbox input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -51px;
+}
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
+    position: relative;
+	top: 3px;
+    right: 5px;
+	margin-left: 15px;
+   
+}
+.niceCheck input {
+    display: none;
+}
+
+.css-checkbox{
+    margin-top: 100px;
+    width: 150px;
+    float: left;
+}
+.jquery-checkbox{
+    margin-top: 100px;
+    width: 150px;
+    float: left;
+}		
