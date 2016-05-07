@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0; 
+    background-color: #e6e9e9;
+}
+.page {
+    margin: 5px auto 20px;
+    padding-right: 50px; 
+    padding-left: 50px; 
+    width: 35%; /* 512px */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+h1{
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+.photo{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.personal_data{
+    padding-top: 40px; 
+    /*padding-bottom: 15px;*/
+    line-height: 1.5;
+    border-bottom: 1px solid black;
+    
+}
+.persona_wish{
+    margin-top: 20px;
+    line-height: 1.5;
+    border-bottom: 1px solid black;
+}
+.contacts{
+    border-bottom: 1px solid black;
+}
+.feedback{
+    padding-bottom: 48px;
+}
+
+a {
+    color: #0083e8;
+}

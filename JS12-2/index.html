@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<title>JS12-2 Шаблонизатор</title>
+<link href="css/style.css" rel="stylesheet">
+ <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+ <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/tmpl.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <script type="text/template" id="person">
+        <section class="page">
+            <div class="personal_data">
+                <h1><%= title %></h1>
+                <div class="photo">
+                    <img src= <%= imgSource %> alt="">
+                </div>
+                <p><%= profession %></p>
+           </div>
+           <div class="personal_wish">
+                <p><%= objective %></p>
+                <ul>
+                    <% for(var i=0; i< 3; i++){ %>
+                    <li><%= objectiveItems[i] %></li>
+                    <% }; %>
+                </ul>
+            </div>
+            <div class="contacts">
+                <p><%= phone %></p>
+                <p><%= phoneNumber %></p>
+                <p><%= fb %></p>
+                <a href=" <%= linkFB %> ">facebook.com</a>
+                <p></p>
+            </div>
+            <div class="feedback">
+            <p><%= feedback %></p>
+            <p><%= feedbackText %></p>
+        </div>
+     </section>
+  
+  </script>
+   
+</body>
+</html>
