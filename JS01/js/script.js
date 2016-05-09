@@ -12,6 +12,7 @@ function pow(a, b) {
             result *= a;
         }
     }
+    console.log(this);
  return result;
 }
 var calculateResult = pow(base, exponent);
