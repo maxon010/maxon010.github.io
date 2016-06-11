@@ -1,0 +1,70 @@
+.main-wrapper {
+    display: block;
+    width: 800px;
+	margin: 10px auto;
+	/*background: white;*/
+	border: 1px solid grey;
+     background: #eee;
+}
+body {
+    font-family: Tahoma;
+}
+.mainH1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.mainForm {
+    margin-top: 20px;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+p {
+    font-size: 18px;
+	margin-left: 10px;
+}
+input[type="radio"] {
+    margin: 10px 0 15px 80px;
+}
+.modal{
+    display:none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 80px;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;
+    background: #ccf;
+    opacity: 0;
+    z-index: 10;
+}
+.modal input {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btnForm {
+    display: block;
+    margin: 30px auto;
+    font-size: 18px;
+    width: 325px;
+    height: 50px;
+}
+.overlay {
+    z-index:5; 
+	position: fixed; 
+	background-color: #000; 
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	width: 100%; 
+	height: 100%; 
+	top: 0; 
+	left: 0;
+	display:none;
+}
